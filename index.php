@@ -129,7 +129,7 @@
 
           <div class="feature-card bg-white p-6 rounded-lg shadow-md border border-gray-100 transition-all duration-300 hover:-translate-y-1
           hover:shadow-xl">
-          <div class="w-12 h-12 rounded-full flex items-center justify-center mb-4 bg-[rgba(255,75,75,0.2)]">
+            <div class="w-12 h-12 rounded-full flex items-center justify-center mb-4 bg-[rgba(255,75,75,0.2)]">
               <img src="Images/icons/calendar.png" alt="calendar picture">
             </div>
             <div class="mb-2 text-xl font-semibold text-[#2d3748]">Customize Workout Plans</div>
@@ -250,13 +250,241 @@
         </section>
 
 
-        <section>
+        <section class="py-40 bg-gray-50">
           <div class="container mx-auto px-4">
-            <div class="p-6 border-b border-gray-20">
-              <h2>Dashboard Preview</h2>
-              <p>See what awaits after you sign up</p>
-            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
 
+              <div class="p-6 border-b border-gray-200">
+                <h2 class="text-2xl font-bold">Dashboard Preview</h2>
+                <p class="text-gray-600">See what awaits after you sign up</p>
+              </div>
+
+              <div class="flex flex-col md:flex-row">
+                <div class="w-full md:w-64 bg-gray-50 p-4 border-r border-gray-200">
+
+                <!-- User Profile -->
+                  <div class="flex items-center mb-6">
+                    <div
+                      class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-3 bg-[#F9E8E9]">
+                      <i class="ri-user-line text-[rgba(255,75,75,1)]"></i>
+                    </div>
+                    <div>
+                      <p class="font-medium">Alexander Chen</p>
+                      <p class="text-xs text-gray-500">Premium Member</p>
+                    </div>
+                  </div>
+
+                <!-- Nav links -->
+                  <nav>
+                    <a
+                      href="#"
+                      class="flex items-center py-2 px-3 rounded-md bg-primary/10 text-primary mb-1 bg-[#F9E8E9]">
+                      <i class="ri-dashboard-line mr-3 text-[rgba(255,75,75,1)]"></i>
+                      <span class="text-[rgba(255,75,75,1)]">Dashboard</span>
+                    </a>
+                    <a
+                      href="https://readdy.ai/home/4e85c255-9e9d-45ca-b338-73609ef7ce38/8eac195b-f7ee-4f66-a53f-67e9c7de5219"
+                      data-readdy="true"
+                      class="flex items-center py-2 px-3 rounded-md text-gray-700 hover:bg-gray-100 mb-1">
+                      <i class="ri-calendar-line mr-3"></i>
+                      <span>Workout Plan</span>
+                    </a>
+                    <a
+                      href="#"
+                      class="flex items-center py-2 px-3 rounded-md text-gray-700 hover:bg-gray-100 mb-1">
+                      <i class="ri-restaurant-line mr-3"></i>
+                      <span>Meal Plan</span>
+                    </a>
+                    <a
+                      href="#"
+                      class="flex items-center py-2 px-3 rounded-md text-gray-700 hover:bg-gray-100 mb-1">
+                      <i class="ri-line-chart-line mr-3"></i>
+                      <span>Progress Tracker</span>
+                    </a>
+                    <a
+                      href="#"
+                      class="flex items-center py-2 px-3 rounded-md text-gray-700 hover:bg-gray-100 mb-1">
+                      <i class="ri-settings-line mr-3"></i>
+                      <span>Settings</span>
+                    </a>
+                  </nav>
+
+                  
+                </div>
+                <div class="flex-1 p-6">
+                  <div class="mb-6">
+                    <h3 class="text-lg font-semibold mb-4">
+                      Welcome back, Alexander!
+                    </h3>
+                    <div
+                      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                      <div
+                        class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+                        <div class="flex items-center">
+                          <div
+                            class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                            <i class="ri-scales-line text-blue-500"></i>
+                          </div>
+                          <div>
+                            <p class="text-sm text-gray-500">Current Weight</p>
+                            <p class="font-semibold">182 lbs</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+                        <div class="flex items-center">
+                          <div
+                            class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-3">
+                            <i class="ri-target-line text-green-500"></i>
+                          </div>
+                          <div>
+                            <p class="text-sm text-gray-500">Target Weight</p>
+                            <p class="font-semibold">170 lbs</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+                        <div class="flex items-center">
+                          <div
+                            class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center mr-3">
+                            <i class="ri-calendar-check-line text-purple-500"></i>
+                          </div>
+                          <div>
+                            <p class="text-sm text-gray-500">Workouts This Week</p>
+                            <p class="font-semibold">3 of 5</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+                        <div class="flex items-center">
+                          <div
+                            class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center mr-3">
+                            <i class="ri-fire-line text-orange-500"></i>
+                          </div>
+                          <div>
+                            <p class="text-sm text-gray-500">Calories Today</p>
+                            <p class="font-semibold">1,850 / 2,200</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-6">
+                    <h3 class="text-lg font-semibold mb-4">Weight Progress</h3>
+                    <div
+                      class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 h-64"
+                      id="weight-chart"
+                    ></div>
+                  </div>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <h3 class="text-lg font-semibold mb-4">Today's Workout</h3>
+                      <div
+                        class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+                        <div class="flex items-center justify-between mb-4">
+                          <div>
+                            <h4 class="font-medium">Upper Body Strength</h4>
+                            <p class="text-sm text-gray-500">
+                              45 minutes • 5 exercises
+                            </p>
+                          </div>
+                          <button
+                            class="bg-primary text-white px-4 py-2 !rounded-button text-sm hover:bg-opacity-90 transition-colors whitespace-nowrap">
+                            Start
+                          </button>
+                        </div>
+                        <div class="space-y-3">
+                          <div class="flex items-center">
+                            <div
+                              class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center mr-3">
+                              <span class="text-xs font-medium">1</span>
+                            </div>
+                            <div class="flex-1">
+                              <p class="font-medium">Bench Press</p>
+                              <p class="text-sm text-gray-500">3 sets × 10 reps</p>
+                            </div>
+                          </div>
+                          <div class="flex items-center">
+                            <div
+                              class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center mr-3">
+                              <span class="text-xs font-medium">2</span>
+                            </div>
+                            <div class="flex-1">
+                              <p class="font-medium">Shoulder Press</p>
+                              <p class="text-sm text-gray-500">3 sets × 12 reps</p>
+                            </div>
+                          </div>
+                          <div class="flex items-center">
+                            <div
+                              class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center mr-3">
+                              <span class="text-xs font-medium">3</span>
+                            </div>
+                            <div class="flex-1">
+                              <p class="font-medium">Tricep Extensions</p>
+                              <p class="text-sm text-gray-500">3 sets × 15 reps</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-semibold mb-4">Today's Meals</h3>
+                      <div
+                        class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+                        <div class="space-y-4">
+                          <div>
+                            <div class="flex items-center justify-between mb-2">
+                              <h4 class="font-medium">Breakfast</h4>
+                              <span class="text-sm text-gray-500">520 cal</span>
+                            </div>
+                            <div class="flex items-start">
+                              <div
+                                class="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center mr-3 mt-1">
+                                <i class="ri-cup-line text-yellow-500"></i>
+                              </div>
+                              <div>
+                                <p>Greek Yogurt with Berries and Granola</p>
+                                <div
+                                  class="flex space-x-2 text-xs text-gray-500 mt-1">
+                                  <span>Protein: 24g</span>
+                                  <span>Carbs: 65g</span>
+                                  <span>Fat: 12g</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="flex items-center justify-between mb-2">
+                              <h4 class="font-medium">Lunch</h4>
+                              <span class="text-sm text-gray-500">650 cal</span>
+                            </div>
+                            <div class="flex items-start">
+                              <div
+                                class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-3 mt-1">
+                                <i class="ri-restaurant-line text-green-500"></i>
+                              </div>
+                              <div>
+                                <p>Grilled Chicken Salad with Avocado</p>
+                                <div
+                                  class="flex space-x-2 text-xs text-gray-500 mt-1">
+                                  <span>Protein: 42g</span>
+                                  <span>Carbs: 35g</span>
+                                  <span>Fat: 28g</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
         </section>
         
