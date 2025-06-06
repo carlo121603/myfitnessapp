@@ -14,7 +14,7 @@
   <!-- Remix icon -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/><
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
   <style>
     .font-lobster {
@@ -33,7 +33,7 @@
   </style>
 </head>
   <body>
-      <nav class="px-4 lg:px-18 py-2.5 bg-white relative z-50">
+      <nav class="px-4 lg:px-18 py-2.5 bg-white relative z-50 border-b border-gray-200">
         <div class="flex justify-between items-center text-lg py-4">
           
           <div class="flex items-center space-x-8">
@@ -58,8 +58,7 @@
         <!-- Mobile Slide Menu -->
         <div
           id="mobile-menu"
-          class="fixed top-0 right-0 w-64 h-full bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out md:hidden"
-        >
+          class="fixed top-0 right-0 w-64 h-full bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
           <div class="p-4 flex flex-col space-y-4 text-base">
             <button id="close-btn" class="text-2xl self-end">×</button>
             <a href="#" class="block">Features</a>
@@ -267,7 +266,7 @@
 
 
 
-        <section class="py-40 bg-gray-50">
+        <section class="pt-[80px] bg-gray-50">
           <div class="container mx-auto px-4">
             <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
 
@@ -293,37 +292,37 @@
 
                 <!-- Nav links -->
                   <nav>
-                    <a
+                    <span
                       href="#"
                       class="flex items-center py-2 px-3 rounded-md bg-primary/10 text-primary mb-1 bg-[#F9E8E9]">
                       <i class="ri-dashboard-line mr-3 text-[rgba(255,75,75,1)]"></i>
                       <span class="text-[rgba(255,75,75,1)]">Dashboard</span>
-                    </a>
-                    <a
+                    </span>
+                    <span
                       href="https://readdy.ai/home/4e85c255-9e9d-45ca-b338-73609ef7ce38/8eac195b-f7ee-4f66-a53f-67e9c7de5219"
                       data-readdy="true"
-                      class="flex items-center py-2 px-3 rounded-md text-gray-700 hover:bg-gray-100 mb-1">
+                      class="flex items-center py-2 px-3 rounded-md text-gray-700 mb-1">
                       <i class="ri-calendar-line mr-3"></i>
                       <span>Workout Plan</span>
-                    </a>
-                    <a
+                    </span>
+                    <span
                       href="#"
-                      class="flex items-center py-2 px-3 rounded-md text-gray-700 hover:bg-gray-100 mb-1">
+                      class="flex items-center py-2 px-3 rounded-md text-gray-700 mb-1">
                       <i class="ri-restaurant-line mr-3"></i>
                       <span>Meal Plan</span>
-                    </a>
-                    <a
+                    </span>
+                    <span
                       href="#"
-                      class="flex items-center py-2 px-3 rounded-md text-gray-700 hover:bg-gray-100 mb-1">
+                      class="flex items-center py-2 px-3 rounded-md text-gray-700 mb-1">
                       <i class="ri-line-chart-line mr-3"></i>
                       <span>Progress Tracker</span>
-                    </a>
-                    <a
+                    </span>
+                    <span
                       href="#"
-                      class="flex items-center py-2 px-3 rounded-md text-gray-700 hover:bg-gray-100 mb-1">
+                      class="flex items-center py-2 px-3 rounded-md text-gray-700 mb-1">
                       <i class="ri-settings-line mr-3"></i>
                       <span>Settings</span>
-                    </a>
+                    </span>
                   </nav>
 
                   
@@ -507,7 +506,7 @@
         </section>
         
 
-        <section id="faq" class="py-20 bg-gray-50">
+        <section id="faq" class="py-40 bg-gray-50">
           <div class="container mx-auto px-4">
             <div class="text-center mb-16">
               <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
@@ -787,6 +786,34 @@
       </footer>
 
 
+      <button 
+        id="backToTopBtn" 
+        class="fixed bottom-8 right-8 w-12 h-12 rounded-full bg-[#FF4B4B] text-white shadow-lg hover:bg-red-600 transition-all duration-300 opacity-0 invisible flex items-center justify-center z-40"
+        aria-label="Back to top">
+        <i class="ri-arrow-up-line text-xl"></i>
+      </button>
+
+
+      <script> 
+        const backToTopBtn = document.getElementById('backToTopBtn');
+        
+        window.addEventListener('scroll', () => {
+          if (window.pageYOffset > 300) {
+            backToTopBtn.classList.remove('opacity-0', 'invisible');
+            backToTopBtn.classList.add('opacity-100', 'visible');
+          } else {
+            backToTopBtn.classList.remove('opacity-100', 'visible');
+            backToTopBtn.classList.add('opacity-0', 'invisible');
+          }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+      </script>
 
       <script id="faq-accordion">
         document.addEventListener("DOMContentLoaded", function () {
