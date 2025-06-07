@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FitGoal - Achieve Your Fitness Goals with Confidence</title>
-  
+
     <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -21,66 +21,25 @@
       font-family: 'Lobster', cursive;
       color:#FF4B4B;
     }
-
-    nav{
-      color: rgb(55 65 81);
-    }
-
     body{
       font-family: 'Inter', sans-serif;
     }
-    
+
   </style>
 </head>
   <body>
-      <nav class="px-4 lg:px-18 py-2.5 bg-white relative z-50 border-b border-gray-200">
-        <div class="flex justify-between items-center text-lg py-4">
-          
-          <div class="flex items-center space-x-8">
-            <a href="#" class="font-lobster text-2xl sm:text-3xl md:text-4xl">FitGoal</a>
-            <ul class="hidden md:flex space-x-4 text-base">
-              <li><a href="#" class="hover:no-underline feature hover:text-[#FF4B4B] transition duration-400">Features</a></li>
-              <li><a href="#" class="hover:no-underline testimonials hover:text-[#FF4B4B] transition duration-400">Testimonials</a></li>
-              <li><a href="#" class="hover:no-underline faqs hover:text-[#FF4B4B] transition duration-400">FAQs</a></li>
-            </ul>
-          </div>
-
-          <!-- Desktop Right Side -->
-          <div class="hidden md:flex items-center space-x-8 text-base">
-            <a href="#" class="text-base hover:text-[#FF4B4B] transition duration-400">Login</a>
-            <button class="bg-[#FF4B4B] text-white sm:px-5 md:px-6 py-2 rounded-xl hover:bg-red-600 transition duration-300">Sign Up Free</button>
-          </div>
-
-          <!-- Burger Icon -->
-          <button class="md:hidden text-2xl" id="menu-btn">☰</button>
-        </div>
-
-        <!-- Mobile Slide Menu -->
-        <div
-          id="mobile-menu"
-          class="fixed top-0 right-0 w-64 h-full bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
-          <div class="p-4 flex flex-col space-y-4 text-base">
-            <button id="close-btn" class="text-2xl self-end">×</button>
-            <a href="#" class="block">Features</a>
-            <a href="#" class="block">Testimonials</a>
-            <a href="#" class="block">FAQs</a>
-            <a href="#" class="block">Login</a>
-            <button class="w-full bg-[#FF4B4B] text-white px-5 py-2 rounded-xl mt-2 hover:bg-red-600 transition duration-400">Sign Up Free</button>
-          </div>
-        </div>
-      </nav>
-
-
-
+  <?php
+      include 'nav.php';
+  ?>
       <main>
         <div class="relative bg-[url('Images/exercise.jpg')] bg-cover bg-center h-[600px] w-full">
-          <div 
+          <div
           class="absolute inset-0
           bg-[linear-gradient(to_right,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_50%,rgba(255,255,255,0.2)_80%,rgba(255,255,255,0)_100%)]">
 
             <div class="flex items-center h-full mx-3 px-3">
               <div class="flex flex-col items-start max-w-2xl w-full">
-                
+
                 <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
                   Achieve Your Fitness Goals with Confidence
                 </h1>
@@ -89,7 +48,7 @@
                   Track your workouts, plan your meals, and monitor your progress all in one place. Join thousands of users who have transformed their fitness journey.
                 </p>
 
-                
+
                 <a href="#" class="text-white px-7 py-3 rounded-xl w-full md:w-auto text-center bg-[#FF4B4B] hover:bg-red-600 transition">
                   Start your journey
                 </a>
@@ -137,7 +96,7 @@
             <div class="mb-2 text-xl font-semibold text-[#2d3748]">Nutrition Guidance</div>
             <div class="text-gray-600">Receive meal suggestions and track your nutrition to fuel your workouts effectively.</div>
           </div>
-          
+
           <div class="feature-card bg-white p-6 rounded-lg shadow-md border border-gray-100 transition-all duration-300 hover:-translate-y-1
           hover:shadow-xl">
           <div class="w-12 h-12 rounded-full flex items-center justify-center mb-4 bg-[rgba(255,75,75,0.2)]">
@@ -148,8 +107,8 @@
           </div>
         </section>
 
-        <!-- Icons 
-        <div> Icons made by <a href="https://www.flaticon.com/authors/vectorsmarket15" title="vectorsmarket15"> vectorsmarket15 </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div> 
+        <!-- Icons
+        <div> Icons made by <a href="https://www.flaticon.com/authors/vectorsmarket15" title="vectorsmarket15"> vectorsmarket15 </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>
 
         <div> Icons made by <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>
 
@@ -325,7 +284,7 @@
                     </span>
                   </nav>
 
-                  
+
                 </div>
                 <div class="flex-1 p-6">
                     <div class="mb-6">
@@ -504,7 +463,7 @@
             </div>
           </div>
         </section>
-        
+
 
         <section id="faq" class="py-40 bg-gray-50">
           <div class="container mx-auto px-4">
@@ -785,211 +744,22 @@
         </div>
       </footer>
 
-
-      <button 
-        id="backToTopBtn" 
+      <button
+        id="backToTopBtn"
         class="fixed bottom-8 right-8 w-12 h-12 rounded-full bg-[#FF4B4B] text-white shadow-lg hover:bg-red-600 transition-all duration-300 opacity-0 invisible flex items-center justify-center z-40"
         aria-label="Back to top">
         <i class="ri-arrow-up-line text-xl"></i>
       </button>
 
-
-      <script> 
-        const backToTopBtn = document.getElementById('backToTopBtn');
-        
-        window.addEventListener('scroll', () => {
-          if (window.pageYOffset > 300) {
-            backToTopBtn.classList.remove('opacity-0', 'invisible');
-            backToTopBtn.classList.add('opacity-100', 'visible');
-          } else {
-            backToTopBtn.classList.remove('opacity-100', 'visible');
-            backToTopBtn.classList.add('opacity-0', 'invisible');
-          }
-        });
-
-        backToTopBtn.addEventListener('click', () => {
-          window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-          });
-        });
-      </script>
-
-      <script id="faq-accordion">
-        document.addEventListener("DOMContentLoaded", function () {
-          const faqButtons = document.querySelectorAll('[id^="faq-"][id$="-btn"]');
-          faqButtons.forEach((button) => {
-            button.addEventListener("click", function () {
-              const id = this.id.replace("-btn", "");
-              const content = document.getElementById(`${id}-content`);
-              const icon = document.getElementById(`${id}-icon`);
-              if (content.classList.contains("hidden")) {
-                content.classList.remove("hidden");
-                icon.classList.remove("ri-arrow-down-s-line");
-                icon.classList.add("ri-arrow-up-s-line");
-              } else {
-                content.classList.add("hidden");
-                icon.classList.remove("ri-arrow-up-s-line");
-                icon.classList.add("ri-arrow-down-s-line");
-              }
-            });
-          });
-        });
-      </script>
-
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
-      <script id="chart-initialization">
-      document.addEventListener("DOMContentLoaded", function () {
-        // Initialize weight chart
-        const weightChart = document.getElementById("weight-chart");
-        if (weightChart) {
-          const chart = echarts.init(weightChart);
-          const option = {
-            animation: false,
-            grid: {
-              top: 20,
-              right: 20,
-              bottom: 40,
-              left: 50,
-            },
-            tooltip: {
-              trigger: "axis",
-              backgroundColor: "rgba(255, 255, 255, 0.8)",
-              borderColor: "#E2E8F0",
-              textStyle: {
-                color: "#1f2937",
-              },
-            },
-            xAxis: {
-              type: "category",
-              data: [
-                "May 22",
-                "May 24",
-                "May 26",
-                "May 28",
-                "May 30",
-                "Jun 1",
-                "Jun 3",
-                "Jun 5",
-                "Jun 7",
-                "Jun 9",
-                "Jun 11",
-                "Jun 13",
-              ],
-              axisLine: {
-                lineStyle: {
-                  color: "#E2E8F0",
-                },
-              },
-              axisLabel: {
-                color: "#1f2937",
-              },
-            },
-            yAxis: {
-              type: "value",
-              min: 175,
-              max: 190,
-              axisLine: {
-                lineStyle: {
-                  color: "#E2E8F0",
-                },
-              },
-              axisLabel: {
-                color: "#1f2937",
-                formatter: "{value} lbs",
-              },
-              splitLine: {
-                lineStyle: {
-                  color: "#E2E8F0",
-                  type: "dashed",
-                },
-              },
-            },
-            series: [
-              {
-                name: "Weight",
-                type: "line",
-                data: [
-                  189, 188, 187, 186.5, 185, 184.5, 184, 183.5, 183, 182.5, 182, 182,
-                ],
-                smooth: true,
-                symbol: "none",
-                lineStyle: {
-                  color: "rgba(87, 181, 231, 1)",
-                  width: 3,
-                },
-                areaStyle: {
-                  color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-                    {
-                      offset: 0,
-                      color: "rgba(87, 181, 231, 0.3)",
-                    },
-                    {
-                      offset: 1,
-                      color: "rgba(87, 181, 231, 0.1)",
-                    },
-                  ]),
-                },
-              },
-              {
-                name: "Target",
-                type: "line",
-                data: [170, 170, 170, 170, 170, 170, 170, 170, 170, 170, 170, 170],
-                lineStyle: {
-                  color: "rgba(252, 141, 98, 0.7)",
-                  type: "dashed",
-                  width: 2,
-                },
-                symbol: "none",
-              },
-            ],
-          };
-          chart.setOption(option);
-          window.addEventListener("resize", function () {
-            chart.resize();
-          });
-        }
-      });
-    </script>
-
-    <script>
-      const menuBtn = document.getElementById('menu-btn');
-      const closeBtn = document.getElementById('close-btn');
-      const mobileMenu = document.getElementById('mobile-menu');
-
-      menuBtn.addEventListener('click', () => {
-        mobileMenu.classList.remove('translate-x-full');
-        mobileMenu.classList.add('translate-x-0');
-      });
-
-      closeBtn.addEventListener('click', () => {
-        mobileMenu.classList.remove('translate-x-0');
-        mobileMenu.classList.add('translate-x-full');
-      });
-    </script>
-
-      <!-- Swiper JS -->
+    <!-- Chart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper(".mySwiper", {
-        loop: true,
-        autoplay: {
-          delay: 2000,
-          disableOnInteraction: false,
-        },
-        speed: 800,
-        slidesPerView: 1,
-        spaceBetween: 20,
-        breakpoints: {
-          768: {
-            slidesPerView: 2,
-          },
-          1024: {
-            slidesPerView: 3,
-          },
-        },
-      });
-    </script>
 
+    <script src="Scripts/accordionFaqs.js"></script>
+    <script src="Scripts/scrollToTop.js"></script>
+    <script src="Scripts/burgerMenu.js"></script>
+    <script src="Scripts/Swiper.js"></script>
+    <script src="Scripts/chart.js"></script>
   </body>
 </html>
